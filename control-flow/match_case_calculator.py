@@ -6,7 +6,8 @@ operator = input("Choose the operation (+,-,*,/):")
 Addition = num1 + num2
 Subtraction = num1 - num2
 Multiplication = num1 * num2
-Division = num1 / num2
+
+
 
 
 match operator:
@@ -17,13 +18,15 @@ match operator:
     case "*":
         print("The result is", Multiplication)
     case "/":
-        print("The result is", Division)
+        if num2 != 0:
+            Division = num1/num2
+            print("The result is", Division)
+        else:
+            print("Cannot divide by zero.")
  
+
     
-match Division:
-    case num1:
-        if Division == num1:
-            print("Cannot divide by 0")          
+         
 
 
         
