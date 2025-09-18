@@ -1,5 +1,5 @@
 weather_prompt = input("What's the weather like today?(sunny/rainy/cold):")
-today_weather = str(weather_prompt)
+today_weather = weather_prompt
 
 if today_weather == "sunny":
     print("Wear a t-shirt and sunglasses")
