@@ -2,9 +2,9 @@ num1_prompt = input("Enter the first number:")
 num2_prompt = input("Enter the second number:")
 num1 = int(num1_prompt)
 num2 = int(num2_prompt)
-operator = input("Choose the operation (+,-,*,/):")
+operation = input("Choose the operation (+,-,*,/):")
 
-match operator:
+match operation:
     case "+":
         Addition = num1 + num2
         print("The result is", Addition)
