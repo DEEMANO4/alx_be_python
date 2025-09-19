@@ -1,4 +1,4 @@
-pattern = int(input("Enter the side length of the square:"))
+pattern = int(input("Enter the size of the pattern:"))
 
 rows = 0
 
