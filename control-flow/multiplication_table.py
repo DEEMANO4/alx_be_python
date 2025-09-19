@@ -1,3 +1,4 @@
 number = int(input("Enter a number to see its multiplication table: "))
 for n in range(1,11):
-    print(number, "*", n, "=", number*n)
+    Product = number * n
+    print(f"{number} * {n} = {Product}")
