@@ -1,30 +1,10 @@
-def display_menu():
-    print("Shopping List Manager")
-    print("1. Add Item")
-    print("2. Remove Item")
-    print("3. View List")
-    print("4. Exit")
+from datetime import datetime
+def get_current_datetime():
+    current_dt = datetime.now()
+    return current_dt
 
-def main():
-    shopping_list = []
-    while True:
-        display_menu()
-        choice = input("Enter your choice: ")
+current_timestamp = get_current_datetime()
+print(f"The current date and time is: {current_timestamp}")
 
-        if choice == '1':
-            # Prompt for and add an item
-            pass
-        elif choice == '2':
-            # Prompt for and remove an item
-            pass
-        elif choice == '3':
-            # Display the shopping list
-            pass
-        elif choice == '4':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please try again.")
-
-if __name__ == "__main__":
-    main()
+formatted_timestamp = current_timestamp.strftime("%Y-%m-%d %H:%M:%S")
+print(f"Formatted current date and time: {formatted_timestamp}")
