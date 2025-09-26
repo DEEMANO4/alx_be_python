@@ -1,14 +1,14 @@
-def perform_operation(num1, num2, operations):
-    if operations == "add":
+def perform_operation(num1, num2, operation):
+    if operation == "add":
         result = num1 + num2
         return result
-    elif operations == "subtract":
+    elif operation == "subtract":
         result = num1 - num2
         return result
-    elif operations == "multiply":
+    elif operation == "multiply":
         result = num1 * num2
         return result
-    elif operations == "divide":
+    elif operation == "divide":
         if num2 != 0:
             result = num1 / num2
             return result
