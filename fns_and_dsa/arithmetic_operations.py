@@ -9,8 +9,8 @@ def perform_operation(num1, num2, operation):
         result = num1 * num2
         return result
     elif operation == "divide":
-        if num2 != 0:
+        if num2 == 0:
+            return 0
+        else:
             result = num1 / num2
             return result
-        else:
-            return 0
