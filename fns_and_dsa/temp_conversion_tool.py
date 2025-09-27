@@ -24,6 +24,6 @@ elif Celsius_or_Fahrenheit == "F":
     print(f"{prompt_temperature}°F is {Celsius_result}°C")
 
 else: 
-    print(f"Invalid temperature. Please enter a numerical value.")
+    print(f"Invalid temperature. Please enter a numeric value.")
 
 
