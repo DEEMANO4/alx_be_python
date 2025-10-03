@@ -21,7 +21,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
 
     def test_subtracion(self):
-        "test_subtraction"
+        "test_subtraction" "test_subtraction(self)"
         self.assertEqual(self.calc.subtract(2, 3), -1)
         self.assertEqual(self.calc.subtract(-1, 1), -2)
         self.assertEqual(self.calc.subtract(-5, -2), -3)
