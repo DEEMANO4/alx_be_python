@@ -9,24 +9,24 @@ class Book:
 
 
 class EBook(Book):
-    def __init__(self, file_size):
-        super().__init__()
+    def __init__(self, title, author, file_size):
+        super().__init__(title, author)
         self.file_size = file_size
 
 class PrintBook(Book):
-    def __init__(self, page_count):
-        super().__init__()
+    def __init__(self,title, author, page_count):
+        super().__init__(title, author)
         self.page_count = page_count
 
 
 class Library:
-    def __init__(self, books):
-        self.books = books
+    def __init__(self, book):
+        self.books = book
         self.books = []
 
-    def add_book(self, books):
-        if isinstance(books, Book):
-            self.books.append(books)
+    def add_book(self, book):
+        if isinstance(book, Book):
+            self.books.append(book)
 
     def list_books(self):
         print(self.books)
