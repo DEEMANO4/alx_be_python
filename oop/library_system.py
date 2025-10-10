@@ -20,8 +20,8 @@ class PrintBook(Book):
 
 
 class Library:
-    def __init__(self, books):
-        self.books = books
+    def __init__(self, book):
+        self.books = book
         self.books = []
 
     def add_books(self, books):
