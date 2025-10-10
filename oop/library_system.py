@@ -20,14 +20,12 @@ class PrintBook(Book):
 
 
 class Library:
-    def __init__(self, book):
-        self.books = book
+    def __init__(self, books):
         self.books = []
 
-    def add_books(self, books):
-        self.books.append(Book)
-        self.books.append(EBook)
-        self.books.append(PrintBook)
+    def add_books(self, book):
+        if isinstance(book, Book):
+            self.books.append(book)
 
     def list_books(self):
         print(self.books)
