@@ -14,7 +14,7 @@ class EBook(Book):
         self.file_size = file_size
 
 class PrintBook(Book):
-    def __init__(self,title, author, page_count):
+    def __init__(self, title, author, page_count):
         super().__init__(title, author)
         self.page_count = page_count
 
@@ -29,4 +29,8 @@ class Library:
 
 
     def list_books(self):
-        print(self.books)
+        if not self.books:
+            print("The library is empty.")
+        else:
+            for book in self.books:
+                print(book)
