@@ -5,7 +5,7 @@ class Book:
 
 
 
-class EBOOK(Book):
+class EBook(Book):
     def __init__(self, file_size):
         self.file_size = file_size
 
@@ -20,7 +20,7 @@ class library:
 
     def add_books(self, books):
         self.books.append(Book)
-        self.books.append(EBOOK)
+        self.books.append(EBook)
         self.books.append(PrintBook)
 
     def list_books(self):
