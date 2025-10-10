@@ -5,11 +5,11 @@ class Book:
 
 
 
-class EBOOK:
+class EBOOK(Book):
     def __init__(self, file_size):
         self.file_size = file_size
 
-class PrintBook:
+class PrintBook(Book):
     def __init__(self, page_count):
         self.page_count = page_count
 
