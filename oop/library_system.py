@@ -1,5 +1,5 @@
 class Book:
-    def __init__(self, title, author):
+    def __init__(self, title, author, ):
         self.title = title
         self.author = author
 
@@ -20,8 +20,7 @@ class PrintBook(Book):
 
 
 class Library:
-    def __init__(self, book):
-        self.books = book
+    def __init__(self):
         self.books = []
 
     def add_book(self, book):
